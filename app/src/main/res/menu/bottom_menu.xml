@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/home24"
+        android:title="หน้าหลัก" />
+
+    <item
+        android:id="@+id/history"
+        android:icon="@drawable/drug30"
+        android:title="กล่องยา" />
+
+    <item
+        android:id="@+id/notification"
+        android:icon="@drawable/bell24"
+        android:title="ตั่งค่าเตือน" />
+
+    <item
+        android:id="@+id/profile"
+        android:icon="@drawable/user24"
+        android:title="โปรไฟล์" />
+</menu>

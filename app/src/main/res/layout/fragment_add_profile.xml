@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/grey_300"
+    tools:context=".AddProfileFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/navbar_top_profile"
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:background="@drawable/card_header"
+            android:textSize="30sp"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            android:fontFamily="@font/kanit_regular"
+            android:text="เพิ่มข้อมูลส่วนตัว"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+            android:id="@+id/box_add_name_profile"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/card_tabel_time"
+            app:layout_constraintTop_toBottomOf="@id/navbar_top_profile"
+            android:layout_marginEnd="30dp"
+            android:layout_marginStart="30dp"/>
+
+        <TextView
+            android:id="@+id/text_add_name_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/kanit_regular"
+            android:textColor="@color/black"
+            android:text="ชื่อ - นามสกุล"
+            android:textSize="18sp"
+            app:layout_constraintTop_toTopOf="@id/box_add_name_profile"
+            app:layout_constraintStart_toStartOf="@id/box_add_name_profile"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp"/>
+        <EditText
+            android:id="@+id/button_add_name_profile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="60dp"
+            android:layout_marginEnd="50dp"
+            android:textColor="@color/black"
+            android:hint="สุขใจ ใจดี"
+            android:textSize="12dp"
+            android:fontFamily="@font/kanit_regular"
+            app:layout_constraintTop_toBottomOf="@id/text_add_name_profile"
+            app:layout_constraintStart_toStartOf="@id/text_add_name_profile"/>
+
+        <TextView
+            android:id="@+id/box_add_sickness_profile"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/card_tabel_time"
+            app:layout_constraintTop_toBottomOf="@id/box_add_name_profile"
+            android:layout_marginEnd="30dp"
+            android:layout_marginStart="30dp"/>
+
+        <TextView
+            android:id="@+id/text_add_sickness_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/kanit_regular"
+            android:textColor="@color/black"
+            android:text="โรคประจำตัว"
+            android:textSize="18sp"
+            app:layout_constraintTop_toTopOf="@id/box_add_sickness_profile"
+            app:layout_constraintStart_toStartOf="@id/box_add_sickness_profile"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp"/>
+        <EditText
+            android:id="@+id/button_add_sickness_profile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="60dp"
+            android:layout_marginEnd="50dp"
+            android:textColor="@color/black"
+            android:hint="โรคหัวใจ"
+            android:textSize="12dp"
+            android:fontFamily="@font/kanit_regular"
+            app:layout_constraintTop_toBottomOf="@id/text_add_sickness_profile"
+            app:layout_constraintStart_toStartOf="@id/text_add_sickness_profile"/>
+
+        <TextView
+            android:id="@+id/box_add_hispital_profile"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/card_tabel_time"
+            app:layout_constraintTop_toBottomOf="@id/box_add_sickness_profile"
+            android:layout_marginEnd="30dp"
+            android:layout_marginStart="30dp"/>
+
+        <TextView
+            android:id="@+id/text_add_hotpital_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/kanit_regular"
+            android:textColor="@color/black"
+            android:text="โรงพยาบาลที่รักษา"
+            android:textSize="18sp"
+            app:layout_constraintTop_toTopOf="@id/box_add_hispital_profile"
+            app:layout_constraintStart_toStartOf="@id/box_add_hispital_profile"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp"/>
+        <EditText
+            android:id="@+id/button_add_hotpita_profile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="60dp"
+            android:layout_marginEnd="50dp"
+            android:textColor="@color/black"
+            android:hint="โรงพยาบาลสรรพสิทธิประสงค์"
+            android:textSize="12sp"
+            android:fontFamily="@font/kanit_regular"
+            app:layout_constraintTop_toBottomOf="@id/text_add_hotpital_profile"
+            app:layout_constraintStart_toStartOf="@id/text_add_hotpital_profile"/>
+
+        <Button
+            android:id="@+id/button_save_profile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ตกลง"
+            android:textSize="20sp"
+            android:fontFamily="@font/kanit_regular"
+            app:layout_constraintTop_toBottomOf="@id/box_add_hispital_profile"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="250dp"
+            android:background="@drawable/rounder_primary_gb_outline"
+            android:theme="@style/Button.White"
+
+
+            />
+
+        <Button
+            android:id="@+id/button_cancel_profile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ยกเลิก"
+            android:textSize="20sp"
+            android:fontFamily="@font/kanit_regular"
+            app:layout_constraintStart_toEndOf="@id/button_save_profile"
+            app:layout_constraintTop_toBottomOf="@id/box_add_hispital_profile"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="250dp"
+            android:layout_marginEnd="30dp"
+            android:background="@drawable/rounder_red_gb_outline"
+            />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>
